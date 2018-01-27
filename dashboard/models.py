@@ -9,7 +9,7 @@ class transaction(models.Model):
     time = models.DateTimeField(default=django.utils.timezone.now)
     qty = models.FloatField()
     amount = models.FloatField()
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __unicode__(self):
         return self.user.username + " Rs " + str(self.amount) + " " + str(self.qty) + "L"
