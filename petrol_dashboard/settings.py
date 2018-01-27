@@ -25,7 +25,7 @@ SECRET_KEY = '6!i^gdce$o=lgog1wy^4_p@d8ka#b5d)9$_0neysw#y-nxubfe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u'petroboard-petroboard.a3c1.starter-us-west-1.openshiftapps.com', u'127.0.0.1', u'localhost']
 
 
 # Application definition
